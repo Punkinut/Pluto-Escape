@@ -25,5 +25,5 @@
     "rules": {
         "react/react-in-jsx-scope": "off"
     },
-    "ignorePatterns": ["next.config.js"]
+    "ignorePatterns": ["next.config.js", "jest.config.js"]
 }
