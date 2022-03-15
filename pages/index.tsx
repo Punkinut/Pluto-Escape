@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import Blob from '../components/atoms/Blob';
+import Main from '../components/page/Main';
 
 const Home: NextPage = () => {
-    return <Blob />;
+    return <Main />;
 };
 
 export default Home;
