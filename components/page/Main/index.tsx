@@ -6,6 +6,7 @@ import styles from './index.module.scss';
 
 const Main: FC = () => {
     const [store] = useState(() => new ScoreboardStore());
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
         store.loadState();
@@ -18,12 +19,11 @@ const Main: FC = () => {
     }
 
     const handleMouseMove = (e: React.MouseEvent) => {
-        console.log(e);
+        setMousePosition({ x: e.pageX - 50, y: e.pageY - 50 });
     };
-
     return (
         <section className={styles.gamerContainer} onMouseMove={(e) => handleMouseMove(e)}>
-            <Blob />
+            <Blob mousePosition={mousePosition} />
         </section>
     );
 };
