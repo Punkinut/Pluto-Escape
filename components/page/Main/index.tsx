@@ -12,7 +12,9 @@ const Main: FC = () => {
 
     const { state } = store;
 
-    console.log(JSON.stringify(state, null, 2));
+    if (state.scoreboard) {
+        console.log(JSON.stringify(state.scoreboard, null, 2));
+    }
 
     return (
         <div>
