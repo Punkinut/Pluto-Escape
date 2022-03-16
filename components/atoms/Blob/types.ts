@@ -1,6 +1,5 @@
+type Position = { x: number; y: number };
+
 export type BlobProps = {
-    mousePosition: {
-        x: number;
-        y: number;
-    };
+    smallMousePosition: Position;
 };

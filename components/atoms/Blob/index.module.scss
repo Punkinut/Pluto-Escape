@@ -1,10 +1,19 @@
 @import '../../../styles/variables.scss';
 
-.blob {
-    height: 100px;
-    width: 100px;
+.blob,
+.smallBlob {
     background-color: $white;
     border-radius: 50px;
     position: absolute;
     box-shadow: 0 0 50px rgba(255, 255, 255, 0.315), -10px 0 80px;
+}
+
+.blob {
+    height: 100px;
+    width: 100px;
+}
+
+.smallBlob {
+    height: 70px;
+    width: 70px;
 }

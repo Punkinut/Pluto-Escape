@@ -3,15 +3,16 @@ import styles from './index.module.scss';
 import { motion } from 'framer-motion';
 import { BlobProps } from './types';
 
-const Blob: FC<BlobProps> = ({ mousePosition }) => {
+const Blob: FC<BlobProps> = ({ smallMousePosition }) => {
     return (
-        <motion.div
-            className={styles.blob}
-            animate={{
-                x: mousePosition.x,
-                y: mousePosition.y
-            }}
-            transition={{ type: 'spring', stiffness: 100 }}></motion.div>
+        <>
+            <motion.div
+                className={styles.smallBlob}
+                animate={{
+                    x: smallMousePosition.x,
+                    y: smallMousePosition.y
+                }}></motion.div>
+        </>
     );
 };
 
