@@ -18,6 +18,7 @@ const Main: FC = () => {
         console.log(JSON.stringify(state.scoreboard, null, 2));
     }
 
+    // Figure out why this keeps console logging
     const handleMouseMove = (e: React.MouseEvent) => {
         setMousePosition({ x: e.pageX - 50, y: e.pageY - 50 });
     };
